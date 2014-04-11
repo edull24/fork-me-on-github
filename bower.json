@@ -1,6 +1,13 @@
 {
-  "name": "fork-me-on-github",
-  "dependencies": {
-  },
-  "devDependencies": {}
+    "name": "fork-me-on-github",
+    "version": "0.1.0",
+    "main": "fork.css",
+    "ignore": [
+        "index.html",
+        "Gruntfile.js",
+        "package.json",
+        "*.md"
+    ],
+    "dependencies": {},
+    "devDependencies": {}
 }
