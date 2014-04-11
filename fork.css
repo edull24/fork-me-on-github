@@ -1,0 +1,40 @@
+/* line 14, fork.scss */
+
+.fork-me {
+  position: absolute;
+  top: 40px;
+  background: #a00000;
+  box-shadow: 0 0 10px 0 #888888;
+  padding: 2px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 23, fork.scss */
+
+.fork-me.left {
+  left: -55px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 28, fork.scss */
+
+.fork-me.right {
+  right: -55px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 33, fork.scss */
+
+.fork-me a {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 5px #444444;
+}
