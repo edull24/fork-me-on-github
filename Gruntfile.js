@@ -11,8 +11,7 @@ module.exports = function (grunt) {
         // Project settings.
         config: {
             // Configurable paths.
-            app: '.',
-            dist: 'dist'
+            app: '.'
         },
 
         // Watches files for changes and runs tasks based on the changed files.
@@ -67,13 +66,10 @@ module.exports = function (grunt) {
 
         // Empties folders to start fresh.
         clean: {
-            dist: {
+            all: {
                 files: [{
-                    dot: true,
                     src: [
-                        '.tmp',
-                        '<%= config.dist %>/*',
-                        '!<%= config.dist %>/.git*'
+                        '<%= config.app %>/*.css',
                     ]
                 }]
             }
@@ -98,7 +94,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= config.app %>/',
-                    src: '*.css',
+                    src: 'fork.css',
                     dest: '<%= config.app %>/'
                 }]
             }
@@ -107,26 +103,12 @@ module.exports = function (grunt) {
         cssmin: {
             all: {
                 files: {
-                    '<%= config.dist %>/fork.min.css': [
+                    '<%= config.app %>/fork.min.css': [
                         '<%= config.app %>/*.css'
                     ]
                 }
             }
-        },
-
-        copy: {
-            all: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= config.app %>',
-                    dest: '<%= config.dist %>',
-                    src: [
-                        '*.{css,scss}'
-                    ]
-                }]
-            }
-        },
+        }
     });
 
 
@@ -144,11 +126,10 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('build', [
-        'clean:dist',
+        'clean:all',
         'compass',
         'autoprefixer',
-        'cssmin',
-        'copy'
+        'cssmin'
     ]);
 
     grunt.registerTask('default', [
