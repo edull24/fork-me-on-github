@@ -1,6 +1,9 @@
 {
     "name": "fork-me-on-github",
     "version": "0.1.0",
+    "authors": [
+        "edull24 <evandull@gmail.com>"
+    ],
     "main": "fork.css",
     "ignore": [
         "index.html",
@@ -9,5 +12,10 @@
         "*.md"
     ],
     "dependencies": {},
-    "devDependencies": {}
+    "devDependencies": {},
+    "keywords": [
+        "css",
+        "fork me banner",
+        "github banner"
+    ]
 }
