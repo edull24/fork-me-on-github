@@ -13,9 +13,11 @@
     ],
     "dependencies": {},
     "devDependencies": {},
+    "description": "A CSS fork me on github banner.",
     "keywords": [
         "css",
         "fork me banner",
         "github banner"
-    ]
+    ],
+    "license": "MIT"
 }
