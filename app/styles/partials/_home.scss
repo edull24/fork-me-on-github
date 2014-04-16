@@ -1,3 +1,22 @@
+$white: #fff;
+
 body {
-    margin: 40px;
+    color: $white;
+    background: rgb(71, 71, 221);
+}
+
+header {
+    padding: rem-calc(50) 0;
+
+    p {
+        font-size: rem-calc(40);
+    }
+}
+
+h2 {
+    color: $white;
+}
+
+.pen {
+    margin-top: rem-calc(25);
 }

@@ -1,9 +1,8 @@
 define(
 [
-    'jquery',
-    'templates'
+    'jquery'
 ],
-function($, templates) {
+function($) {
 
     'use strict';
 
@@ -40,12 +39,6 @@ function($, templates) {
             setupDom();
 
             initFoundation();
-
-            dom.body.prepend(templates.welcome({
-                message: 'Congratulations! You are up and running!',
-                url: 'https://github.com/edull24/simple-site-seed',
-                name: 'View the repo'
-            }));
 
         });
 

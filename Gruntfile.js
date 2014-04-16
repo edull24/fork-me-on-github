@@ -108,10 +108,15 @@ module.exports = function (grunt) {
                     src: [
                         '.tmp',
                         '<%= config.dist %>/*',
-                        '!<%= config.dist %>/.git*'
+                        '!<%= config.dist %>/.git*',
+                        // Remove all files from root.
+                        '*',
+                        // Only remove application files from the root.
+                        '!{<%= config.app %>,<%= config.dist %>,node_modules,test,.{bowerrc,editorconfig,git*,jshintrc},*.{json,md,js,sublime*},LICENSE}'
                     ]
                 }]
             },
+
             server: '.tmp'
         },
 
@@ -322,6 +327,15 @@ module.exports = function (grunt) {
                         'styles/fonts/{,*/}*.*'
                     ]
                 }]
+            },
+            distPages: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= config.dist %>',
+                    dest: './',
+                    src: ['**/*']
+                }]
             }
         },
 
@@ -465,7 +479,8 @@ module.exports = function (grunt) {
         'rev',
         'usemin',
         'htmlmin',
-        'dom_munger'
+        'dom_munger',
+        'copy:distPages'
     ]);
 
     grunt.registerTask('default', [
