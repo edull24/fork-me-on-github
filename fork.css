@@ -1,4 +1,4 @@
-/* line 14, fork.scss */
+/* line 14, _fork.scss */
 
 .fork-me {
   position: absolute;
@@ -10,7 +10,7 @@
   white-space: nowrap;
 }
 
-/* line 23, fork.scss */
+/* line 23, _fork.scss */
 
 .fork-me.left {
   left: -55px;
@@ -18,7 +18,7 @@
   transform: rotate(-45deg);
 }
 
-/* line 28, fork.scss */
+/* line 28, _fork.scss */
 
 .fork-me.right {
   right: -55px;
@@ -26,7 +26,7 @@
   transform: rotate(45deg);
 }
 
-/* line 33, fork.scss */
+/* line 33, _fork.scss */
 
 .fork-me a {
   display: block;
