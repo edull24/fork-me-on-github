@@ -8,23 +8,17 @@ module.exports = function (grunt) {
     // Define the configuration for all the tasks.
     grunt.initConfig({
 
-        // Project settings.
-        config: {
-            // Configurable paths.
-            app: '.'
-        },
-
         // Watches files for changes and runs tasks based on the changed files.
         watch: {
             gruntfile: {
                 files: ['Gruntfile.js']
             },
-            compass: {
-                files: ['<%= config.app %>/*.{scss,sass}'],
-                tasks: ['compass']
+            sass: {
+                files: ['{,*/}*.{scss,sass}'],
+                tasks: ['sass:dev']
             },
             styles: {
-                files: ['<%= config.app %>/*.css'],
+                files: ['*.css'],
                 tasks: ['newer:autoprefixer']
             },
             livereload: {
@@ -32,8 +26,8 @@ module.exports = function (grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '<%= config.app %>/*.html',
-                    '<%= config.app %>/*.css'
+                    '*.html',
+                    '*.css'
                 ]
             }
         },
@@ -51,14 +45,14 @@ module.exports = function (grunt) {
                     open: true,
                     base: [
                         '.tmp',
-                        '<%= config.app %>'
+                        '.'
                     ]
                 }
             },
             dist: {
                 options: {
                     open: true,
-                    base: '<%= config.dist %>',
+                    base: '.',
                     livereload: false
                 }
             }
@@ -69,18 +63,39 @@ module.exports = function (grunt) {
             all: {
                 files: [{
                     src: [
-                        '<%= config.app %>/*.css',
+                        '*.css',
                     ]
                 }]
             }
         },
 
-        // Compiles Sass to CSS and generates necessary files if requested.
-        compass: {
-            all: {
+        sass: {
+            options: {
+                loadPath: 'partials'
+            },
+            dist: {
                 options: {
-                    sassDir: '<%= config.app %>/',
-                    cssDir: '<%= config.app %>/'
+                    style: 'expanded'
+                },
+                files: {
+                    'fork.css': 'main.scss'
+                }
+            },
+            distCompress: {
+                options: {
+                    style: 'compressed'
+                },
+                files: {
+                    'fork.min.css': 'fork.css'
+                }
+            },
+            dev: {
+                options: {
+                    lineNumbers: true,
+                    style: 'expanded'
+                },
+                files: {
+                    'fork.css': 'main.scss'
                 }
             }
         },
@@ -88,25 +103,11 @@ module.exports = function (grunt) {
         // Add vendor prefixed styles.
         autoprefixer: {
             options: {
-                browsers: ['last 2 version']
+                browsers: ['last 2 versions']
             },
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.app %>/',
-                    src: 'fork.css',
-                    dest: '<%= config.app %>/'
-                }]
-            }
-        },
-
-        cssmin: {
             all: {
-                files: {
-                    '<%= config.app %>/fork.min.css': [
-                        '<%= config.app %>/*.css'
-                    ]
-                }
+                src: 'fork.css',
+                dest: 'fork.css'
             }
         }
     });
@@ -118,7 +119,7 @@ module.exports = function (grunt) {
         }
 
         grunt.task.run([
-            'compass',
+            'sass:dev',
             'autoprefixer',
             'connect:livereload',
             'watch'
@@ -127,9 +128,9 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:all',
-        'compass',
+        'sass:dist',
         'autoprefixer',
-        'cssmin'
+        'sass:distCompress'
     ]);
 
     grunt.registerTask('default', [
