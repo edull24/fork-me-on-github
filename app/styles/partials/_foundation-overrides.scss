@@ -55,7 +55,7 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #fff;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -157,7 +157,7 @@
 // $paragraph-text-rendering: optimizeLegibility;
 
 // We use these to style <code> tags
-// $code-color: scale-color($alert-color, $lightness: -27%);
+$code-color: scale-color($primary-color, $lightness: -27%);
 // $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
 // $code-font-weight: bold;
 
@@ -769,7 +769,7 @@
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-// $panel-bg: scale-color(#fff, $lightness: -5%);
+$panel-bg: $dark-blue;
 // $panel-border-style: solid;
 // $panel-border-size: 1px;
 
@@ -778,7 +778,7 @@
 // $panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
 
 // We use these to set default inner padding and bottom margin
-// $panel-margin-bottom: rem-calc(20);
+$panel-margin-bottom: rem-calc(40);
 // $panel-padding: rem-calc(20);
 
 // We use these to set default font colors

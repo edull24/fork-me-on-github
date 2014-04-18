@@ -1,22 +1,55 @@
-$white: #fff;
-
 body {
     color: $white;
-    background: rgb(71, 71, 221);
+    background: $blue;
+    font-family: $font-stack;
 }
 
 header {
+    margin-bottom: rem-calc(20);
     padding: rem-calc(50) 0;
+    background: $blue;
+    background: linear-gradient(to bottom, $dark-blue 0%, $blue 100%);
 
-    p {
-        font-size: rem-calc(40);
+    h1 {
+        font-family: $font-stack;
     }
 }
 
 h2 {
+    margin-top: rem-calc(50);
+}
+
+h1,
+h2,
+h4 {
+    font-family: $font-stack;
+    font-weight: bold;
     color: $white;
 }
 
-.pen {
-    margin-top: rem-calc(25);
+p {
+    font-size: rem-calc(18);
+}
+
+a {
+    border-bottom: 1px dotted $white;
+}
+
+pre {
+    background: $black;
+    margin-top: rem-calc(20);
+    padding: rem-calc(20);
+}
+
+pre + ul {
+    margin-top: rem-calc(20);
+}
+
+.panel > ul > li:not(:last-child),
+.panel > ol > li:not(:last-child) {
+    margin-bottom: rem-calc(20);
+}
+
+.panel:first-of-type {
+    margin-top: rem-calc(40);
 }

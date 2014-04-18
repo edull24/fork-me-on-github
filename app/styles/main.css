@@ -3865,10 +3865,10 @@ select {
 .panel {
   border-style: solid;
   border-width: 1px;
-  border-color: #d8d8d8;
-  margin-bottom: 1.25rem;
+  border-color: #142365;
+  margin-bottom: 2.5rem;
   padding: 1.25rem;
-  background: #f2f2f2;
+  background: #162772;
 }
 
 @media -sass-debug-info {
@@ -3905,7 +3905,7 @@ select {
   }
 
   line {
-    font-family: \0000358;
+    font-family: \0000359;
   }
 }
 
@@ -3916,7 +3916,7 @@ select {
 .panel h5,
 .panel h6,
 .panel p {
-  color: #333333;
+  color: white;
 }
 
 @media -sass-debug-info {
@@ -3971,10 +3971,10 @@ select {
 .panel.callout {
   border-style: solid;
   border-width: 1px;
-  border-color: #b6edff;
-  margin-bottom: 1.25rem;
+  border-color: #e3e3e3;
+  margin-bottom: 2.5rem;
   padding: 1.25rem;
-  background: #ecfaff;
+  background: white;
 }
 
 @media -sass-debug-info {
@@ -4075,7 +4075,7 @@ select {
 }
 
 .panel.callout a:not(.button) {
-  color: #008cba;
+  color: white;
 }
 
 @media -sass-debug-info {
@@ -4776,7 +4776,7 @@ td {
 }
 
 a {
-  color: #008cba;
+  color: white;
   text-decoration: none;
   line-height: inherit;
 }
@@ -4793,7 +4793,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #0078a0;
+  color: #dbdbdb;
 }
 
 @media -sass-debug-info {
@@ -5093,7 +5093,7 @@ small {
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
-  color: #bd260d;
+  color: #bababa;
 }
 
 /* Lists */
@@ -7521,17 +7521,91 @@ th.hide-for-touch {
 
 @media -sass-debug-info {
   filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/_fork\.scss;
+  }
+
+  line {
+    font-family: \0000314;
+  }
+}
+
+.fork-me {
+  position: absolute;
+  top: 40px;
+  background: #a00000;
+  box-shadow: 0 0 10px 0 #888888;
+  padding: 2px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/_fork\.scss;
+  }
+
+  line {
+    font-family: \0000323;
+  }
+}
+
+.fork-me.left {
+  left: -55px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/_fork\.scss;
+  }
+
+  line {
+    font-family: \0000328;
+  }
+}
+
+.fork-me.right {
+  right: -55px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/_fork\.scss;
+  }
+
+  line {
+    font-family: \0000333;
+  }
+}
+
+.fork-me a {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  color: white;
+  border: 1px dotted white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 5px #444444;
+}
+
+@media -sass-debug-info {
+  filename {
     font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
   }
 
   line {
-    font-family: \000033;
+    font-family: \000031;
   }
 }
 
 body {
   color: white;
   background: #4747dd;
+  font-family: "Open Sans", sans-serif;
 }
 
 @media -sass-debug-info {
@@ -7540,12 +7614,15 @@ body {
   }
 
   line {
-    font-family: \000038;
+    font-family: \000037;
   }
 }
 
 header {
+  margin-bottom: 1.25rem;
   padding: 3.125rem 0;
+  background: #4747dd;
+  background: linear-gradient(to bottom, #162772 0%, #4747dd 100%);
 }
 
 @media -sass-debug-info {
@@ -7554,12 +7631,12 @@ header {
   }
 
   line {
-    font-family: \0000311;
+    font-family: \0000313;
   }
 }
 
-header p {
-  font-size: 2.5rem;
+header h1 {
+  font-family: "Open Sans", sans-serif;
 }
 
 @media -sass-debug-info {
@@ -7568,11 +7645,29 @@ header p {
   }
 
   line {
-    font-family: \0000316;
+    font-family: \0000318;
   }
 }
 
 h2 {
+  margin-top: 3.125rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000324;
+  }
+}
+
+h1,
+h2,
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
   color: white;
 }
 
@@ -7582,10 +7677,83 @@ h2 {
   }
 
   line {
-    font-family: \0000320;
+    font-family: \0000330;
   }
 }
 
-.pen {
-  margin-top: 1.5625rem;
+p {
+  font-size: 1.125rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000334;
+  }
+}
+
+a {
+  border-bottom: 1px dotted white;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000338;
+  }
+}
+
+pre {
+  background: black;
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000344;
+  }
+}
+
+pre + ul {
+  margin-top: 1.25rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000349;
+  }
+}
+
+.panel > ul > li:not(:last-child),
+.panel > ol > li:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000353;
+  }
+}
+
+.panel:first-of-type {
+  margin-top: 2.5rem;
 }

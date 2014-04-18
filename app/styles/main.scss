@@ -1,5 +1,9 @@
+@import 'partials/variables';
+
 @import 'partials/foundation-overrides';
 @import 'partials/foundation-components';
 
-// Add site partials here.
+@import 'partials/fork-overrides';
+@import 'fork-me-on-github/fork.scss';
+
 @import 'partials/home';
