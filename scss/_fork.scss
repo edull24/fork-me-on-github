@@ -43,5 +43,18 @@ $fork-text-border: 1px solid #fff !default;
         text-align: center;
         text-decoration: none;
         text-shadow: $fork-text-shadow;
+
+        &:link,
+        &:visited,
+        &:hover,
+        &:focus,
+        &:active {
+            @extend a;
+        }
+
+        // Aid accessibility.
+        &:focus {
+            text-decoration: underline;
+        }
     }
 }

@@ -34,7 +34,12 @@
 
 /* line 37, /Users/evandull/dev/fork-me-on-github/scss/_fork.scss */
 
-.fork-me a {
+.fork-me a,
+.fork-me a:link,
+.fork-me a:visited,
+.fork-me a:hover,
+.fork-me a:focus,
+.fork-me a:active {
   display: block;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: white;
@@ -43,6 +48,12 @@
   text-align: center;
   text-decoration: none;
   text-shadow: 0 0 5px #444444;
+}
+
+/* line 56, /Users/evandull/dev/fork-me-on-github/scss/_fork.scss */
+
+.fork-me a:focus {
+  text-decoration: underline;
 }
 
 /* line 3, main.scss */
