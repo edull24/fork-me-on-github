@@ -71,7 +71,7 @@ module.exports = function (grunt) {
 
         sass: {
             options: {
-                loadPath: 'partials'
+                loadPath: 'scss'
             },
             dist: {
                 options: {

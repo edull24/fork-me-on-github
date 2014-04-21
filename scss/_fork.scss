@@ -20,6 +20,10 @@ $fork-text-border: 1px solid #fff !default;
     overflow: hidden;
     white-space: nowrap;
 
+    &.fixed {
+        position: fixed;
+    }
+
     &.left {
         left: $fork-x-position;
         transform: rotate(-45deg);
