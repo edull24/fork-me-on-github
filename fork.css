@@ -1,4 +1,4 @@
-/* line 14, /Users/evandull/dev/fork-me-on-github/scss/_fork.scss */
+/*! fork-me-on-github v0.4.0 | (c) 2014, 2014 | MIT License | https://github.com/edull24/fork-me-on-github */
 
 .fork-me {
   position: absolute;
@@ -10,13 +10,9 @@
   white-space: nowrap;
 }
 
-/* line 23, /Users/evandull/dev/fork-me-on-github/scss/_fork.scss */
-
 .fork-me.fixed {
   position: fixed;
 }
-
-/* line 27, /Users/evandull/dev/fork-me-on-github/scss/_fork.scss */
 
 .fork-me.left {
   left: -55px;
@@ -24,15 +20,11 @@
   transform: rotate(-45deg);
 }
 
-/* line 32, /Users/evandull/dev/fork-me-on-github/scss/_fork.scss */
-
 .fork-me.right {
   right: -55px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-/* line 37, /Users/evandull/dev/fork-me-on-github/scss/_fork.scss */
 
 .fork-me a,
 .fork-me a:link,
@@ -50,14 +42,6 @@
   text-shadow: 0 0 5px #444444;
 }
 
-/* line 56, /Users/evandull/dev/fork-me-on-github/scss/_fork.scss */
-
 .fork-me a:focus {
   text-decoration: underline;
-}
-
-/* line 3, main.scss */
-
-body {
-  min-height: 1000px;
 }

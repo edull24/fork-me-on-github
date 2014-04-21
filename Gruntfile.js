@@ -8,6 +8,8 @@ module.exports = function (grunt) {
     // Define the configuration for all the tasks.
     grunt.initConfig({
 
+        pkg: grunt.file.readJSON('package.json'),
+
         // Watches files for changes and runs tasks based on the changed files.
         watch: {
             gruntfile: {
@@ -75,7 +77,10 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
-                    style: 'expanded'
+                    style: 'expanded',
+                    banner: '/*! <%= pkg.name %> v<%= pkg.version %> | ' +
+                        '(c) 2014, <%= grunt.template.today("yyyy") %> | MIT License | ' +
+                        'https://github.com/edull24/fork-me-on-github */'
                 },
                 files: {
                     'fork.css': 'main.scss'
