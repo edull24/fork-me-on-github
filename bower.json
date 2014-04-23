@@ -1,13 +1,13 @@
 {
     "name": "fork-me-on-github",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "authors": [
         "edull24 <evandull@gmail.com>"
     ],
     "main": "fork.css",
     "ignore": [
         "**/.*",
-        "*.scss",
+        "main.scss",
         "index.html",
         "Gruntfile.js",
         "package.json"
