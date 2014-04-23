@@ -7711,7 +7711,6 @@ header {
   margin-bottom: 1.25rem;
   padding: 3.125rem 0;
   background: #4747dd;
-  background: -webkit-linear-gradient(top, #162772 0%, #4747dd 100%);
   background: linear-gradient(to bottom, #162772 0%, #4747dd 100%);
 }
 

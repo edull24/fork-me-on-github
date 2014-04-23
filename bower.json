@@ -2,7 +2,7 @@
   "name": "GitHub Pages: fork-me-on-github",
   "private": true,
   "dependencies": {
-    "modernizr": "~2.6.2",
+    "modernizr": "~2.7.2",
     "jquery": "~1.11.0",
     "foundation": "~5.2.1",
     "normalize.css": "~3.0.0",
