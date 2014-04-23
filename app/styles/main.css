@@ -181,7 +181,8 @@ body {
   }
 }
 
-a:hover {
+a:hover,
+.fork-me a:hover {
   cursor: pointer;
 }
 
@@ -4775,7 +4776,12 @@ td {
   }
 }
 
-a {
+a,
+.fork-me a:link,
+.fork-me a:visited,
+.fork-me a:hover,
+.fork-me a:focus,
+.fork-me a:active {
   color: white;
   text-decoration: none;
   line-height: inherit;
@@ -4792,7 +4798,9 @@ a {
 }
 
 a:hover,
-a:focus {
+.fork-me a:hover,
+a:focus,
+.fork-me a:focus {
   color: #dbdbdb;
 }
 
@@ -4806,7 +4814,12 @@ a:focus {
   }
 }
 
-a img {
+a img,
+.fork-me a:link img,
+.fork-me a:visited img,
+.fork-me a:hover img,
+.fork-me a:focus img,
+.fork-me a:active img {
   border: none;
 }
 
@@ -5413,7 +5426,19 @@ blockquote cite:before {
 }
 
 blockquote cite a,
-blockquote cite a:visited {
+blockquote cite .fork-me a:link,
+.fork-me blockquote cite a:link,
+blockquote cite .fork-me a:visited,
+.fork-me blockquote cite a:visited,
+blockquote cite .fork-me a:hover,
+.fork-me blockquote cite a:hover,
+blockquote cite .fork-me a:focus,
+.fork-me blockquote cite a:focus,
+blockquote cite .fork-me a:active,
+.fork-me blockquote cite a:active,
+blockquote cite a:visited,
+blockquote cite .fork-me a:visited,
+.fork-me blockquote cite a:visited {
   color: #555555;
 }
 
@@ -5642,7 +5667,13 @@ blockquote p {
 }
 
   a,
-  a:visited {
+  .fork-me a:link,
+  .fork-me a:visited,
+  .fork-me a:hover,
+  .fork-me a:focus,
+  .fork-me a:active,
+  a:visited,
+  .fork-me a:visited {
     text-decoration: underline;
   }
 
@@ -5656,7 +5687,12 @@ blockquote p {
     }
 }
 
-  a[href]:after {
+  a[href]:after,
+  .fork-me a[href]:link:after,
+  .fork-me a[href]:visited:after,
+  .fork-me a[href]:hover:after,
+  .fork-me a[href]:focus:after,
+  .fork-me a[href]:active:after {
     content: " (" attr(href) ")";
   }
 
@@ -5685,8 +5721,28 @@ blockquote p {
 }
 
   .ir a:after,
+  .ir .fork-me a:link:after,
+  .fork-me .ir a:link:after,
+  .ir .fork-me a:visited:after,
+  .fork-me .ir a:visited:after,
+  .ir .fork-me a:hover:after,
+  .fork-me .ir a:hover:after,
+  .ir .fork-me a:focus:after,
+  .fork-me .ir a:focus:after,
+  .ir .fork-me a:active:after,
+  .fork-me .ir a:active:after,
   a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  .fork-me a[href^="javascript:"]:link:after,
+  .fork-me a[href^="javascript:"]:visited:after,
+  .fork-me a[href^="javascript:"]:hover:after,
+  .fork-me a[href^="javascript:"]:focus:after,
+  .fork-me a[href^="javascript:"]:active:after,
+  a[href^="#"]:after,
+  .fork-me a[href^="#"]:link:after,
+  .fork-me a[href^="#"]:visited:after,
+  .fork-me a[href^="#"]:hover:after,
+  .fork-me a[href^="#"]:focus:after,
+  .fork-me a[href^="#"]:active:after {
     content: "";
   }
 
@@ -7521,7 +7577,7 @@ th.hide-for-touch {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/_fork\.scss;
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
   }
 
   line {
@@ -7541,11 +7597,25 @@ th.hide-for-touch {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/_fork\.scss;
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
   }
 
   line {
     font-family: \0000323;
+  }
+}
+
+.fork-me.fixed {
+  position: fixed;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+  }
+
+  line {
+    font-family: \0000327;
   }
 }
 
@@ -7557,11 +7627,11 @@ th.hide-for-touch {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/_fork\.scss;
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
   }
 
   line {
-    font-family: \0000328;
+    font-family: \0000332;
   }
 }
 
@@ -7573,15 +7643,20 @@ th.hide-for-touch {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/_fork\.scss;
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
   }
 
   line {
-    font-family: \0000333;
+    font-family: \0000337;
   }
 }
 
-.fork-me a {
+.fork-me a,
+.fork-me a:link,
+.fork-me a:visited,
+.fork-me a:hover,
+.fork-me a:focus,
+.fork-me a:active {
   display: block;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: white;
@@ -7590,6 +7665,20 @@ th.hide-for-touch {
   text-align: center;
   text-decoration: none;
   text-shadow: 0 0 5px #444444;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+  }
+
+  line {
+    font-family: \0000356;
+  }
+}
+
+.fork-me a:focus {
+  text-decoration: underline;
 }
 
 @media -sass-debug-info {
@@ -7622,6 +7711,7 @@ header {
   margin-bottom: 1.25rem;
   padding: 3.125rem 0;
   background: #4747dd;
+  background: -webkit-linear-gradient(top, #162772 0%, #4747dd 100%);
   background: linear-gradient(to bottom, #162772 0%, #4747dd 100%);
 }
 
@@ -7695,7 +7785,12 @@ p {
   }
 }
 
-a {
+a,
+.fork-me a:link,
+.fork-me a:visited,
+.fork-me a:hover,
+.fork-me a:focus,
+.fork-me a:active {
   border-bottom: 1px dotted white;
 }
 
