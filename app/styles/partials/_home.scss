@@ -15,6 +15,29 @@ header {
     }
 }
 
+footer {
+    position: relative;
+    height: rem-calc(150);
+    background: $dark-blue;
+
+    .row,
+    .column {
+        height: 100%;
+    }
+
+    .copyright {
+        font-size: rem-calc(12);
+        bottom: rem-calc(10);
+        @extend .x-center;
+    }
+
+    a {
+        @extend .xy-center;
+        text-decoration: none;
+        border-width: 0;
+    }
+}
+
 h2 {
     margin-top: rem-calc(50);
 }
@@ -52,4 +75,22 @@ pre + ul {
 
 .panel:first-of-type {
     margin-top: rem-calc(40);
+}
+
+.x-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.y-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.xy-center {
+    @extend .x-center;
+    @extend .y-center;
+    transform: translate(-50%, -50%);
 }

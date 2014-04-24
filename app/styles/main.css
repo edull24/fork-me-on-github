@@ -7738,6 +7738,77 @@ header h1 {
   }
 }
 
+footer {
+  position: relative;
+  height: 9.375rem;
+  background: #162772;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000324;
+  }
+}
+
+footer .row,
+footer .column {
+  height: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000328;
+  }
+}
+
+footer .copyright {
+  font-size: 0.75rem;
+  bottom: 0.625rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000334;
+  }
+}
+
+footer a,
+footer .fork-me a:link,
+.fork-me footer a:link,
+footer .fork-me a:visited,
+.fork-me footer a:visited,
+footer .fork-me a:hover,
+.fork-me footer a:hover,
+footer .fork-me a:focus,
+.fork-me footer a:focus,
+footer .fork-me a:active,
+.fork-me footer a:active {
+  text-decoration: none;
+  border-width: 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000341;
+  }
+}
+
 h2 {
   margin-top: 3.125rem;
 }
@@ -7748,7 +7819,7 @@ h2 {
   }
 
   line {
-    font-family: \0000324;
+    font-family: \0000347;
   }
 }
 
@@ -7766,7 +7837,7 @@ h4 {
   }
 
   line {
-    font-family: \0000330;
+    font-family: \0000353;
   }
 }
 
@@ -7780,7 +7851,7 @@ p {
   }
 
   line {
-    font-family: \0000334;
+    font-family: \0000357;
   }
 }
 
@@ -7799,7 +7870,7 @@ a,
   }
 
   line {
-    font-family: \0000338;
+    font-family: \0000361;
   }
 }
 
@@ -7815,7 +7886,7 @@ pre {
   }
 
   line {
-    font-family: \0000344;
+    font-family: \0000367;
   }
 }
 
@@ -7829,7 +7900,7 @@ pre + ul {
   }
 
   line {
-    font-family: \0000349;
+    font-family: \0000372;
   }
 }
 
@@ -7844,10 +7915,95 @@ pre + ul {
   }
 
   line {
-    font-family: \0000353;
+    font-family: \0000376;
   }
 }
 
 .panel:first-of-type {
   margin-top: 2.5rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000380;
+  }
+}
+
+.x-center,
+footer .copyright,
+.xy-center,
+footer a,
+footer .fork-me a:link,
+.fork-me footer a:link,
+footer .fork-me a:visited,
+.fork-me footer a:visited,
+footer .fork-me a:hover,
+.fork-me footer a:hover,
+footer .fork-me a:focus,
+.fork-me footer a:focus,
+footer .fork-me a:active,
+.fork-me footer a:active {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000386;
+  }
+}
+
+.y-center,
+.xy-center,
+footer a,
+footer .fork-me a:link,
+.fork-me footer a:link,
+footer .fork-me a:visited,
+.fork-me footer a:visited,
+footer .fork-me a:hover,
+.fork-me footer a:hover,
+footer .fork-me a:focus,
+.fork-me footer a:focus,
+footer .fork-me a:active,
+.fork-me footer a:active {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000392;
+  }
+}
+
+.xy-center,
+footer a,
+footer .fork-me a:link,
+.fork-me footer a:link,
+footer .fork-me a:visited,
+.fork-me footer a:visited,
+footer .fork-me a:hover,
+.fork-me footer a:hover,
+footer .fork-me a:focus,
+.fork-me footer a:focus,
+footer .fork-me a:active,
+.fork-me footer a:active {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
