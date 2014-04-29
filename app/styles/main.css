@@ -181,8 +181,7 @@ body {
   }
 }
 
-a:hover,
-.fork-me a:hover {
+a:hover {
   cursor: pointer;
 }
 
@@ -4776,12 +4775,7 @@ td {
   }
 }
 
-a,
-.fork-me a:link,
-.fork-me a:visited,
-.fork-me a:hover,
-.fork-me a:focus,
-.fork-me a:active {
+a {
   color: white;
   text-decoration: none;
   line-height: inherit;
@@ -4798,9 +4792,7 @@ a,
 }
 
 a:hover,
-.fork-me a:hover,
-a:focus,
-.fork-me a:focus {
+a:focus {
   color: #dbdbdb;
 }
 
@@ -4814,12 +4806,7 @@ a:focus,
   }
 }
 
-a img,
-.fork-me a:link img,
-.fork-me a:visited img,
-.fork-me a:hover img,
-.fork-me a:focus img,
-.fork-me a:active img {
+a img {
   border: none;
 }
 
@@ -5426,19 +5413,7 @@ blockquote cite:before {
 }
 
 blockquote cite a,
-blockquote cite .fork-me a:link,
-.fork-me blockquote cite a:link,
-blockquote cite .fork-me a:visited,
-.fork-me blockquote cite a:visited,
-blockquote cite .fork-me a:hover,
-.fork-me blockquote cite a:hover,
-blockquote cite .fork-me a:focus,
-.fork-me blockquote cite a:focus,
-blockquote cite .fork-me a:active,
-.fork-me blockquote cite a:active,
-blockquote cite a:visited,
-blockquote cite .fork-me a:visited,
-.fork-me blockquote cite a:visited {
+blockquote cite a:visited {
   color: #555555;
 }
 
@@ -5667,13 +5642,7 @@ blockquote p {
 }
 
   a,
-  .fork-me a:link,
-  .fork-me a:visited,
-  .fork-me a:hover,
-  .fork-me a:focus,
-  .fork-me a:active,
-  a:visited,
-  .fork-me a:visited {
+  a:visited {
     text-decoration: underline;
   }
 
@@ -5687,12 +5656,7 @@ blockquote p {
     }
 }
 
-  a[href]:after,
-  .fork-me a[href]:link:after,
-  .fork-me a[href]:visited:after,
-  .fork-me a[href]:hover:after,
-  .fork-me a[href]:focus:after,
-  .fork-me a[href]:active:after {
+  a[href]:after {
     content: " (" attr(href) ")";
   }
 
@@ -5721,28 +5685,8 @@ blockquote p {
 }
 
   .ir a:after,
-  .ir .fork-me a:link:after,
-  .fork-me .ir a:link:after,
-  .ir .fork-me a:visited:after,
-  .fork-me .ir a:visited:after,
-  .ir .fork-me a:hover:after,
-  .fork-me .ir a:hover:after,
-  .ir .fork-me a:focus:after,
-  .fork-me .ir a:focus:after,
-  .ir .fork-me a:active:after,
-  .fork-me .ir a:active:after,
   a[href^="javascript:"]:after,
-  .fork-me a[href^="javascript:"]:link:after,
-  .fork-me a[href^="javascript:"]:visited:after,
-  .fork-me a[href^="javascript:"]:hover:after,
-  .fork-me a[href^="javascript:"]:focus:after,
-  .fork-me a[href^="javascript:"]:active:after,
-  a[href^="#"]:after,
-  .fork-me a[href^="#"]:link:after,
-  .fork-me a[href^="#"]:visited:after,
-  .fork-me a[href^="#"]:hover:after,
-  .fork-me a[href^="#"]:focus:after,
-  .fork-me a[href^="#"]:active:after {
+  a[href^="#"]:after {
     content: "";
   }
 
@@ -7581,48 +7525,43 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \0000314;
+    font-family: \0000363;
   }
 }
 
 .fork-me {
   position: absolute;
-  top: 40px;
-  background: #a00000;
-  box-shadow: 0 0 10px 0 #888888;
-  padding: 2px 0;
+  top: 5px;
+  width: 42px;
+  height: 42px;
+  background-color: #a00000;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOCIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDE4IDMyIj4KPGc+CjwvZz4KCTxwYXRoIGQ9Ik01LjE0MyAyNi4yODZxMC0wLjcxNC0wLjUtMS4yMTR0LTEuMjE0LTAuNS0xLjIxNCAwLjUtMC41IDEuMjE0IDAuNSAxLjIxNCAxLjIxNCAwLjUgMS4yMTQtMC41IDAuNS0xLjIxNHpNNS4xNDMgNS43MTRxMC0wLjcxNC0wLjUtMS4yMTR0LTEuMjE0LTAuNS0xLjIxNCAwLjUtMC41IDEuMjE0IDAuNSAxLjIxNCAxLjIxNCAwLjUgMS4yMTQtMC41IDAuNS0xLjIxNHpNMTYuNTcxIDhxMC0wLjcxNC0wLjUtMS4yMTR0LTEuMjE0LTAuNS0xLjIxNCAwLjUtMC41IDEuMjE0IDAuNSAxLjIxNCAxLjIxNCAwLjUgMS4yMTQtMC41IDAuNS0xLjIxNHpNMTguMjg2IDhxMCAwLjkyOS0wLjQ2NCAxLjcyM3QtMS4yNSAxLjI0MXEtMC4wMzYgNS4xMjUtNC4wMzYgNy4zOTMtMS4yMTQgMC42NzktMy42MjUgMS40NDYtMi4yODYgMC43MTQtMy4wMjcgMS4yNjh0LTAuNzQxIDEuNzg2djAuNDY0cTAuNzg2IDAuNDQ2IDEuMjUgMS4yNDF0MC40NjQgMS43MjNxMCAxLjQyOS0xIDIuNDI5dC0yLjQyOSAxLTIuNDI5LTEtMS0yLjQyOXEwLTAuOTI5IDAuNDY0LTEuNzIzdDEuMjUtMS4yNDF2LTE0LjY0M3EtMC43ODYtMC40NDYtMS4yNS0xLjI0MXQtMC40NjQtMS43MjNxMC0xLjQyOSAxLTIuNDI5dDIuNDI5LTEgMi40MjkgMSAxIDIuNDI5cTAgMC45MjktMC40NjQgMS43MjN0LTEuMjUgMS4yNDF2OC44NzVxMC45NjQtMC40NjQgMi43NS0xLjAxOCAwLjk4Mi0wLjMwNCAxLjU2Mi0wLjUyN3QxLjI1OS0wLjU1NCAxLjA1NC0wLjcwNSAwLjcyMy0wLjkxMSAwLjUtMS4yNDEgMC4xNTItMS42MzRxLTAuNzg2LTAuNDQ2LTEuMjUtMS4yNDF0LTAuNDY0LTEuNzIzcTAtMS40MjkgMS0yLjQyOXQyLjQyOS0xIDIuNDI5IDEgMSAyLjQyOXoiIGZpbGw9IiNmZmZmZmYiIC8+Cjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position: center center;
   overflow: hidden;
   white-space: nowrap;
 }
 
+@media only screen and (min-width: 40.063em) {
 @media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
-  }
+    filename {
+      font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+    }
 
-  line {
-    font-family: \0000323;
-  }
+    line {
+      font-family: \0000363;
+    }
 }
 
-.fork-me.fixed {
-  position: fixed;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+  .fork-me {
+    top: 40px;
+    width: auto;
+    height: auto;
+    padding: 2px 0;
+    box-shadow: 0 0 10px 0 #888888;
+    background-color: #a00000;
+    background-image: none !important;
   }
-
-  line {
-    font-family: \0000327;
-  }
-}
-
-.fork-me.left {
-  left: -55px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
 
 @media -sass-debug-info {
@@ -7631,40 +7570,46 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \0000332;
+    font-family: \0000386;
   }
 }
 
-.fork-me.right {
-  right: -55px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
-  }
-
-  line {
-    font-family: \0000337;
-  }
-}
-
-.fork-me a,
-.fork-me a:link,
-.fork-me a:visited,
-.fork-me a:hover,
-.fork-me a:focus,
-.fork-me a:active {
+.fork-me-link,
+.fork-me-link:link,
+.fork-me-link:visited,
+.fork-me-link:hover,
+.fork-me-link:focus,
+.fork-me-link:active {
   display: block;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  color: white;
-  border: 1px dotted white;
-  padding: 10px 50px;
-  text-align: center;
+  height: 100%;
   text-decoration: none;
-  text-shadow: 0 0 5px #444444;
+  border: none;
+}
+
+@media only screen and (min-width: 40.063em) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+    }
+
+    line {
+      font-family: \0000386;
+    }
+}
+
+  .fork-me-link,
+  .fork-me-link:link,
+  .fork-me-link:visited,
+  .fork-me-link:hover,
+  .fork-me-link:focus,
+  .fork-me-link:active {
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: white;
+    padding: 10px 50px;
+    border: 1px dotted white;
+    text-shadow: 0 0 5px #444444;
+  }
 }
 
 @media -sass-debug-info {
@@ -7673,12 +7618,134 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \0000356;
+    font-family: \00003110;
   }
 }
 
-.fork-me a:focus {
+.fork-me-link:focus {
   text-decoration: underline;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+  }
+
+  line {
+    font-family: \00003115;
+  }
+}
+
+.fork-me-text {
+  display: none;
+}
+
+@media only screen and (min-width: 40.063em) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+    }
+
+    line {
+      font-family: \00003115;
+    }
+}
+
+  .fork-me-text {
+    display: inline;
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+  }
+
+  line {
+    font-family: \00003123;
+  }
+}
+
+.fork-me-dark {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOCIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDE4IDMyIj4KPGc+CjwvZz4KCTxwYXRoIGQ9Ik01LjE0MyAyNi4yODZxMC0wLjcxNC0wLjUtMS4yMTR0LTEuMjE0LTAuNS0xLjIxNCAwLjUtMC41IDEuMjE0IDAuNSAxLjIxNCAxLjIxNCAwLjUgMS4yMTQtMC41IDAuNS0xLjIxNHpNNS4xNDMgNS43MTRxMC0wLjcxNC0wLjUtMS4yMTR0LTEuMjE0LTAuNS0xLjIxNCAwLjUtMC41IDEuMjE0IDAuNSAxLjIxNCAxLjIxNCAwLjUgMS4yMTQtMC41IDAuNS0xLjIxNHpNMTYuNTcxIDhxMC0wLjcxNC0wLjUtMS4yMTR0LTEuMjE0LTAuNS0xLjIxNCAwLjUtMC41IDEuMjE0IDAuNSAxLjIxNCAxLjIxNCAwLjUgMS4yMTQtMC41IDAuNS0xLjIxNHpNMTguMjg2IDhxMCAwLjkyOS0wLjQ2NCAxLjcyM3QtMS4yNSAxLjI0MXEtMC4wMzYgNS4xMjUtNC4wMzYgNy4zOTMtMS4yMTQgMC42NzktMy42MjUgMS40NDYtMi4yODYgMC43MTQtMy4wMjcgMS4yNjh0LTAuNzQxIDEuNzg2djAuNDY0cTAuNzg2IDAuNDQ2IDEuMjUgMS4yNDF0MC40NjQgMS43MjNxMCAxLjQyOS0xIDIuNDI5dC0yLjQyOSAxLTIuNDI5LTEtMS0yLjQyOXEwLTAuOTI5IDAuNDY0LTEuNzIzdDEuMjUtMS4yNDF2LTE0LjY0M3EtMC43ODYtMC40NDYtMS4yNS0xLjI0MXQtMC40NjQtMS43MjNxMC0xLjQyOSAxLTIuNDI5dDIuNDI5LTEgMi40MjkgMSAxIDIuNDI5cTAgMC45MjktMC40NjQgMS43MjN0LTEuMjUgMS4yNDF2OC44NzVxMC45NjQtMC40NjQgMi43NS0xLjAxOCAwLjk4Mi0wLjMwNCAxLjU2Mi0wLjUyN3QxLjI1OS0wLjU1NCAxLjA1NC0wLjcwNSAwLjcyMy0wLjkxMSAwLjUtMS4yNDEgMC4xNTItMS42MzRxLTAuNzg2LTAuNDQ2LTEuMjUtMS4yNDF0LTAuNDY0LTEuNzIzcTAtMS40MjkgMS0yLjQyOXQyLjQyOS0xIDIuNDI5IDEgMSAyLjQyOXoiIGZpbGw9IiMwMDAwMDAiIC8+Cjwvc3ZnPgo=");
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+  }
+
+  line {
+    font-family: \00003127;
+  }
+}
+
+.fork-me-left {
+  left: 5px;
+}
+
+@media only screen and (min-width: 40.063em) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+    }
+
+    line {
+      font-family: \00003127;
+    }
+}
+
+  .fork-me-left {
+    left: -55px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+  }
+
+  line {
+    font-family: \00003136;
+  }
+}
+
+.fork-me-right {
+  right: 5px;
+}
+
+@media only screen and (min-width: 40.063em) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+    }
+
+    line {
+      font-family: \00003136;
+    }
+}
+
+  .fork-me-right {
+    right: -55px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
+  }
+
+  line {
+    font-family: \00003145;
+  }
+}
+
+.fork-me-fixed {
+  position: fixed;
 }
 
 @media -sass-debug-info {
@@ -7784,17 +7851,7 @@ footer .copyright {
   }
 }
 
-footer a,
-footer .fork-me a:link,
-.fork-me footer a:link,
-footer .fork-me a:visited,
-.fork-me footer a:visited,
-footer .fork-me a:hover,
-.fork-me footer a:hover,
-footer .fork-me a:focus,
-.fork-me footer a:focus,
-footer .fork-me a:active,
-.fork-me footer a:active {
+footer a {
   text-decoration: none;
   border-width: 0;
 }
@@ -7841,6 +7898,21 @@ h4 {
   }
 }
 
+h4 {
+  border-bottom: 1px solid white;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000358;
+  }
+}
+
 p {
   font-size: 1.125rem;
 }
@@ -7851,16 +7923,11 @@ p {
   }
 
   line {
-    font-family: \0000357;
+    font-family: \0000362;
   }
 }
 
-a,
-.fork-me a:link,
-.fork-me a:visited,
-.fork-me a:hover,
-.fork-me a:focus,
-.fork-me a:active {
+a {
   border-bottom: 1px dotted white;
 }
 
@@ -7870,7 +7937,7 @@ a,
   }
 
   line {
-    font-family: \0000361;
+    font-family: \0000366;
   }
 }
 
@@ -7886,7 +7953,7 @@ pre {
   }
 
   line {
-    font-family: \0000367;
+    font-family: \0000372;
   }
 }
 
@@ -7900,13 +7967,14 @@ pre + ul {
   }
 
   line {
-    font-family: \0000372;
+    font-family: \0000376;
   }
 }
 
-.panel > ul > li:not(:last-child),
-.panel > ol > li:not(:last-child) {
-  margin-bottom: 1.25rem;
+code .highlight {
+  padding: 0.3125rem;
+  color: #000;
+  background: #dfe23b;
 }
 
 @media -sass-debug-info {
@@ -7915,7 +7983,64 @@ pre + ul {
   }
 
   line {
-    font-family: \0000376;
+    font-family: \0000383;
+  }
+}
+
+.panel > ul:not(#donate) > li:not(:last-child),
+.panel > ol > li:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000387;
+  }
+}
+
+.panel > ol + h4 {
+  margin-top: 2.5rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000391;
+  }
+}
+
+.panel > h4 + ol {
+  margin-top: 1.25rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000395;
+  }
+}
+
+li p {
+  margin-top: 0.9375rem;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \0000399;
   }
 }
 
@@ -7929,24 +8054,14 @@ pre + ul {
   }
 
   line {
-    font-family: \0000380;
+    font-family: \00003103;
   }
 }
 
 .x-center,
 footer .copyright,
 .xy-center,
-footer a,
-footer .fork-me a:link,
-.fork-me footer a:link,
-footer .fork-me a:visited,
-.fork-me footer a:visited,
-footer .fork-me a:hover,
-.fork-me footer a:hover,
-footer .fork-me a:focus,
-.fork-me footer a:focus,
-footer .fork-me a:active,
-.fork-me footer a:active {
+footer a {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -7959,23 +8074,13 @@ footer .fork-me a:active,
   }
 
   line {
-    font-family: \0000386;
+    font-family: \00003109;
   }
 }
 
 .y-center,
 .xy-center,
-footer a,
-footer .fork-me a:link,
-.fork-me footer a:link,
-footer .fork-me a:visited,
-.fork-me footer a:visited,
-footer .fork-me a:hover,
-.fork-me footer a:hover,
-footer .fork-me a:focus,
-.fork-me footer a:focus,
-footer .fork-me a:active,
-.fork-me footer a:active {
+footer a {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -7988,22 +8093,26 @@ footer .fork-me a:active,
   }
 
   line {
-    font-family: \0000392;
+    font-family: \00003115;
   }
 }
 
 .xy-center,
-footer a,
-footer .fork-me a:link,
-.fork-me footer a:link,
-footer .fork-me a:visited,
-.fork-me footer a:visited,
-footer .fork-me a:hover,
-.fork-me footer a:hover,
-footer .fork-me a:focus,
-.fork-me footer a:focus,
-footer .fork-me a:active,
-.fork-me footer a:active {
+footer a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \00003121;
+  }
+}
+
+.fork-me {
+  background-color: black;
 }

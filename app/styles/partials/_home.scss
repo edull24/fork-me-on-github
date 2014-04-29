@@ -50,6 +50,11 @@ h4 {
     color: $white;
 }
 
+h4 {
+    border-bottom: 1px solid $white;
+    display: inline-block;
+}
+
 p {
     font-size: rem-calc(18);
 }
@@ -68,9 +73,27 @@ pre + ul {
     margin-top: rem-calc(20);
 }
 
-.panel > ul > li:not(:last-child),
+code .highlight {
+    padding: rem-calc(5);
+    color: #000;
+    background: rgb(223, 226, 59);
+}
+
+.panel > ul:not(#donate) > li:not(:last-child),
 .panel > ol > li:not(:last-child) {
-    margin-bottom: rem-calc(20);
+    margin-bottom: rem-calc(40);
+}
+
+.panel > ol + h4 {
+    margin-top: rem-calc(40);
+}
+
+.panel > h4 + ol {
+    margin-top: rem-calc(20);
+}
+
+li p {
+    margin-top: rem-calc(15);
 }
 
 .panel:first-of-type {
@@ -93,4 +116,8 @@ pre + ul {
     @extend .x-center;
     @extend .y-center;
     transform: translate(-50%, -50%);
+}
+
+.fork-me {
+    background-color: $black;
 }
