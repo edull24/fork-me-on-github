@@ -87,6 +87,7 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
     display: block;
     height: 100%;
     text-decoration: none;
+    border: none;
 
     @media #{$medium-up} {
         font-family: $fork-font-stack;
