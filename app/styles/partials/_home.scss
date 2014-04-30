@@ -5,7 +5,6 @@ body {
 }
 
 header {
-    margin-bottom: rem-calc(20);
     padding: rem-calc(50) 0;
     background: $blue;
     background: linear-gradient(to bottom, $dark-blue 0%, $blue 100%);
@@ -67,6 +66,7 @@ pre {
     background: $black;
     margin-top: rem-calc(20);
     padding: rem-calc(20);
+    -webkit-overflow-scrolling: touch;
 }
 
 pre + ul {

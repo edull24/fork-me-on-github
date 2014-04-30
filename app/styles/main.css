@@ -7775,7 +7775,6 @@ body {
 }
 
 header {
-  margin-bottom: 1.25rem;
   padding: 3.125rem 0;
   background: #4747dd;
   background: linear-gradient(to bottom, #162772 0%, #4747dd 100%);
@@ -7787,7 +7786,7 @@ header {
   }
 
   line {
-    font-family: \0000313;
+    font-family: \0000312;
   }
 }
 
@@ -7801,7 +7800,7 @@ header h1 {
   }
 
   line {
-    font-family: \0000318;
+    font-family: \0000317;
   }
 }
 
@@ -7817,7 +7816,7 @@ footer {
   }
 
   line {
-    font-family: \0000324;
+    font-family: \0000323;
   }
 }
 
@@ -7832,7 +7831,7 @@ footer .column {
   }
 
   line {
-    font-family: \0000328;
+    font-family: \0000327;
   }
 }
 
@@ -7847,7 +7846,7 @@ footer .copyright {
   }
 
   line {
-    font-family: \0000334;
+    font-family: \0000333;
   }
 }
 
@@ -7862,7 +7861,7 @@ footer a {
   }
 
   line {
-    font-family: \0000341;
+    font-family: \0000340;
   }
 }
 
@@ -7876,7 +7875,7 @@ h2 {
   }
 
   line {
-    font-family: \0000347;
+    font-family: \0000346;
   }
 }
 
@@ -7894,7 +7893,7 @@ h4 {
   }
 
   line {
-    font-family: \0000353;
+    font-family: \0000352;
   }
 }
 
@@ -7909,7 +7908,7 @@ h4 {
   }
 
   line {
-    font-family: \0000358;
+    font-family: \0000357;
   }
 }
 
@@ -7923,7 +7922,7 @@ p {
   }
 
   line {
-    font-family: \0000362;
+    font-family: \0000361;
   }
 }
 
@@ -7937,7 +7936,7 @@ a {
   }
 
   line {
-    font-family: \0000366;
+    font-family: \0000365;
   }
 }
 
@@ -7945,6 +7944,7 @@ pre {
   background: black;
   margin-top: 1.25rem;
   padding: 1.25rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media -sass-debug-info {
