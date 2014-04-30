@@ -8116,3 +8116,17 @@ footer a {
 .fork-me {
   background-color: black;
 }
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/styles\/partials\/_home\.scss;
+  }
+
+  line {
+    font-family: \00003125;
+  }
+}
+
+.pen-msg + div {
+  overflow: auto;
+}
