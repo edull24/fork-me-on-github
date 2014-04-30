@@ -4236,9 +4236,3 @@ footer a {
 .fork-me {
   background-color: black;
 }
-
-/* line 125, partials/_home.scss */
-
-.pen-msg + div {
-  overflow: scroll;
-}
