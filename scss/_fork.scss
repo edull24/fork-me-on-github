@@ -25,6 +25,7 @@ $fork-icon-height: 42px !default;
 $fork-font-stack: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $fork-banner-wrapper-width: 170px !default;
 $fork-banner-wrapper-height: $fork-banner-wrapper-width !default;
+$fork-banner-wrapper-z-index: 9999 !default;
 $fork-banner-bg-color: $fork-icon-bg-color !default;
 $fork-banner-padding: 2px 0 !default;
 $fork-banner-box-shadow: 0 0 10px 0 #888 !default;
@@ -67,14 +68,17 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
     height: $fork-banner-wrapper-height;
     position: absolute;
     top: 0;
+    right: 0;
     overflow: hidden;
+    z-index: $fork-banner-wrapper-z-index;
 }
 
 .fork-me {
-    position: absolute;
-    top: $fork-icon-y-position;
     width: $fork-icon-width;
     height: $fork-icon-height;
+    position: absolute;
+    top: $fork-icon-y-position;
+    right: $fork-icon-x-position;
     background-color: $fork-icon-bg-color;
     background-image: url($fork-icon-light);
     background-repeat: no-repeat;
@@ -83,13 +87,15 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
     white-space: nowrap;
 
     @media #{$medium-up} {
-        top: $fork-banner-y-position;
         width: auto;
         height: auto;
+        top: $fork-banner-y-position;
+        right: $fork-banner-x-position;
         padding: $fork-banner-padding;
         box-shadow: $fork-banner-box-shadow;
         background-color: $fork-banner-bg-color;
         background-image: none !important;
+        transform: rotate(45deg);
     }
 }
 
@@ -136,26 +142,16 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
 
 .fork-me-left {
     left: 0;
+    right: auto;
 
     .fork-me {
         left: $fork-icon-x-position;
+        right: auto;
 
         @media #{$medium-up} {
             left: $fork-banner-x-position;
+            right: auto;
             transform: rotate(-45deg);
-        }
-    }
-}
-
-.fork-me-right {
-    right: 0;
-
-    .fork-me {
-        right: $fork-icon-x-position;
-
-        @media #{$medium-up} {
-            right: $fork-banner-x-position;
-            transform: rotate(45deg);
         }
     }
 }
