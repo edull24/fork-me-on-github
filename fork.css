@@ -1,4 +1,12 @@
-/*! fork-me-on-github v1.0.2 | (c) 2014, 2014 | MIT License | https://github.com/edull24/fork-me-on-github */
+/*! fork-me-on-github v2.0.0 | (c) 2014, 2014 | MIT License | https://github.com/edull24/fork-me-on-github */
+
+.fork-me-wrapper {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
 
 .fork-me {
   position: absolute;
@@ -72,11 +80,15 @@
 }
 
 .fork-me-left {
+  left: 0;
+}
+
+.fork-me-left .fork-me {
   left: 5px;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .fork-me-left {
+  .fork-me-left .fork-me {
     left: -55px;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -84,11 +96,15 @@
 }
 
 .fork-me-right {
+  right: 0;
+}
+
+.fork-me-right .fork-me {
   right: 5px;
 }
 
 @media only screen and (min-width: 40.063em) {
-  .fork-me-right {
+  .fork-me-right .fork-me {
     right: -55px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);

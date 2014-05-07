@@ -23,6 +23,8 @@ $fork-icon-height: 42px !default;
 
 // Banner Settings
 $fork-font-stack: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$fork-banner-wrapper-width: 170px !default;
+$fork-banner-wrapper-height: $fork-banner-wrapper-width !default;
 $fork-banner-bg-color: $fork-icon-bg-color !default;
 $fork-banner-padding: 2px 0 !default;
 $fork-banner-box-shadow: 0 0 10px 0 #888 !default;
@@ -59,6 +61,14 @@ $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max
 
 $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})" !default;
 $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})" !default;
+
+.fork-me-wrapper {
+    width: $fork-banner-wrapper-width;
+    height: $fork-banner-wrapper-height;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
 
 .fork-me {
     position: absolute;
@@ -125,20 +135,28 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
 }
 
 .fork-me-left {
-    left: $fork-icon-x-position;
+    left: 0;
 
-    @media #{$medium-up} {
-        left: $fork-banner-x-position;
-        transform: rotate(-45deg);
+    .fork-me {
+        left: $fork-icon-x-position;
+
+        @media #{$medium-up} {
+            left: $fork-banner-x-position;
+            transform: rotate(-45deg);
+        }
     }
 }
 
 .fork-me-right {
-    right: $fork-icon-x-position;
+    right: 0;
 
-    @media #{$medium-up} {
-        right: $fork-banner-x-position;
-        transform: rotate(45deg);
+    .fork-me {
+        right: $fork-icon-x-position;
+
+        @media #{$medium-up} {
+            right: $fork-banner-x-position;
+            transform: rotate(45deg);
+        }
     }
 }
 
