@@ -8,7 +8,7 @@
     "normalize.css": "~3.0.0",
     "requirejs-bower": "~2.1.11",
     "almond": "~0.2.9",
-    "fork-me-on-github": "~2.0.0"
+    "fork-me-on-github": "~2.1.0"
   },
   "devDependencies": {},
   "resolutions": {

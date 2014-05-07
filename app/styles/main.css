@@ -7525,7 +7525,7 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \0000365;
+    font-family: \0000366;
   }
 }
 
@@ -7534,7 +7534,9 @@ th.hide-for-touch {
   height: 170px;
   position: absolute;
   top: 0;
+  right: 0;
   overflow: hidden;
+  z-index: 9999;
 }
 
 @media -sass-debug-info {
@@ -7543,15 +7545,16 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \0000373;
+    font-family: \0000376;
   }
 }
 
 .fork-me {
-  position: absolute;
-  top: 5px;
   width: 42px;
   height: 42px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
   background-color: #a00000;
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxOCIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDE4IDMyIj4KPGc+CjwvZz4KCTxwYXRoIGQ9Ik01LjE0MyAyNi4yODZxMC0wLjcxNC0wLjUtMS4yMTR0LTEuMjE0LTAuNS0xLjIxNCAwLjUtMC41IDEuMjE0IDAuNSAxLjIxNCAxLjIxNCAwLjUgMS4yMTQtMC41IDAuNS0xLjIxNHpNNS4xNDMgNS43MTRxMC0wLjcxNC0wLjUtMS4yMTR0LTEuMjE0LTAuNS0xLjIxNCAwLjUtMC41IDEuMjE0IDAuNSAxLjIxNCAxLjIxNCAwLjUgMS4yMTQtMC41IDAuNS0xLjIxNHpNMTYuNTcxIDhxMC0wLjcxNC0wLjUtMS4yMTR0LTEuMjE0LTAuNS0xLjIxNCAwLjUtMC41IDEuMjE0IDAuNSAxLjIxNCAxLjIxNCAwLjUgMS4yMTQtMC41IDAuNS0xLjIxNHpNMTguMjg2IDhxMCAwLjkyOS0wLjQ2NCAxLjcyM3QtMS4yNSAxLjI0MXEtMC4wMzYgNS4xMjUtNC4wMzYgNy4zOTMtMS4yMTQgMC42NzktMy42MjUgMS40NDYtMi4yODYgMC43MTQtMy4wMjcgMS4yNjh0LTAuNzQxIDEuNzg2djAuNDY0cTAuNzg2IDAuNDQ2IDEuMjUgMS4yNDF0MC40NjQgMS43MjNxMCAxLjQyOS0xIDIuNDI5dC0yLjQyOSAxLTIuNDI5LTEtMS0yLjQyOXEwLTAuOTI5IDAuNDY0LTEuNzIzdDEuMjUtMS4yNDF2LTE0LjY0M3EtMC43ODYtMC40NDYtMS4yNS0xLjI0MXQtMC40NjQtMS43MjNxMC0xLjQyOSAxLTIuNDI5dDIuNDI5LTEgMi40MjkgMSAxIDIuNDI5cTAgMC45MjktMC40NjQgMS43MjN0LTEuMjUgMS4yNDF2OC44NzVxMC45NjQtMC40NjQgMi43NS0xLjAxOCAwLjk4Mi0wLjMwNCAxLjU2Mi0wLjUyN3QxLjI1OS0wLjU1NCAxLjA1NC0wLjcwNSAwLjcyMy0wLjkxMSAwLjUtMS4yNDEgMC4xNTItMS42MzRxLTAuNzg2LTAuNDQ2LTEuMjUtMS4yNDF0LTAuNDY0LTEuNzIzcTAtMS40MjkgMS0yLjQyOXQyLjQyOS0xIDIuNDI5IDEgMSAyLjQyOXoiIGZpbGw9IiNmZmZmZmYiIC8+Cjwvc3ZnPg==");
   background-repeat: no-repeat;
@@ -7567,18 +7570,21 @@ th.hide-for-touch {
     }
 
     line {
-      font-family: \0000373;
+      font-family: \0000376;
     }
 }
 
   .fork-me {
-    top: 40px;
     width: auto;
     height: auto;
+    top: 40px;
+    right: -55px;
     padding: 2px 0;
     box-shadow: 0 0 10px 0 #888888;
     background-color: #a00000;
     background-image: none !important;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 }
 
@@ -7588,7 +7594,7 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \0000396;
+    font-family: \00003102;
   }
 }
 
@@ -7611,7 +7617,7 @@ th.hide-for-touch {
     }
 
     line {
-      font-family: \0000396;
+      font-family: \00003102;
     }
 }
 
@@ -7636,7 +7642,7 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \00003120;
+    font-family: \00003126;
   }
 }
 
@@ -7650,7 +7656,7 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \00003125;
+    font-family: \00003131;
   }
 }
 
@@ -7665,7 +7671,7 @@ th.hide-for-touch {
     }
 
     line {
-      font-family: \00003125;
+      font-family: \00003131;
     }
 }
 
@@ -7680,7 +7686,7 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \00003133;
+    font-family: \00003139;
   }
 }
 
@@ -7694,12 +7700,13 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \00003137;
+    font-family: \00003143;
   }
 }
 
 .fork-me-left {
   left: 0;
+  right: auto;
 }
 
 @media -sass-debug-info {
@@ -7708,12 +7715,13 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \00003140;
+    font-family: \00003147;
   }
 }
 
 .fork-me-left .fork-me {
   left: 5px;
+  right: auto;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -7723,12 +7731,13 @@ th.hide-for-touch {
     }
 
     line {
-      font-family: \00003140;
+      font-family: \00003147;
     }
 }
 
   .fork-me-left .fork-me {
     left: -55px;
+    right: auto;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
@@ -7740,53 +7749,7 @@ th.hide-for-touch {
   }
 
   line {
-    font-family: \00003150;
-  }
-}
-
-.fork-me-right {
-  right: 0;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
-  }
-
-  line {
-    font-family: \00003153;
-  }
-}
-
-.fork-me-right .fork-me {
-  right: 5px;
-}
-
-@media only screen and (min-width: 40.063em) {
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
-    }
-
-    line {
-      font-family: \00003153;
-    }
-}
-
-  .fork-me-right .fork-me {
-    right: -55px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/evandull\/dev\/fork-me-on-github\/app\/bower_components\/fork-me-on-github\/scss\/_fork\.scss;
-  }
-
-  line {
-    font-family: \00003163;
+    font-family: \00003159;
   }
 }
 
