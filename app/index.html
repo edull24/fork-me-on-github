@@ -22,11 +22,15 @@
     </head>
     <body>
 
-        <div class="fork-me fork-me-right">
+        <div class="fork-me-wrapper fork-me-right">
 
-            <a class="fork-me-link" href="https://github.com/edull24/fork-me-on-github">
-                <span class="fork-me-text">Fork Me On GitHub</span>
-            </a>
+            <div class="fork-me fork-me-fixed">
+
+                <a class="fork-me-link" href="https://github.com/edull24/fork-me-on-github">
+                    <span class="fork-me-text">Fork Me On GitHub</span>
+                </a>
+
+            </div>
 
         </div>
 
@@ -74,10 +78,12 @@
 
                             Super simple markup:
 
-<pre><code>&lt;div class="fork-me fork-me-right"&gt;
-    &lt;a class="fork-me-link" href="[your repo url]"&gt;
-        &lt;span class="fork-me-text"&gt;Fork Me On GitHub&lt;/span&gt;
-    &lt;/a&gt;
+<pre><code>&lt;div class="fork-me-wrapper fork-me-right"&gt;
+    &lt;div class="fork-me"&gt;
+        &lt;a class="fork-me-link" href="[your repo url]"&gt;
+            &lt;span class="fork-me-text"&gt;Fork Me On GitHub&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
                         </li>
@@ -103,7 +109,7 @@
 
                             Supports left or right placement
 
-<pre><code>&lt;div class="fork-me <span class="highlight">[fork-me-left][fork-me-right]</span>"&gt;
+<pre><code>&lt;div class="fork-me-wrapper <span class="highlight">[fork-me-left][fork-me-right]</span>"&gt;
     ...
 &lt;/div&gt;</code></pre>
 
@@ -113,7 +119,7 @@
 
                             Positioned absolutely by default, optionally change to fixed positioning
 
-<pre><code>&lt;div class="fork-me fork-me-right <span class="highlight">fork-me-fixed</span>"&gt;
+<pre><code>&lt;div class="fork-me <span class="highlight">fork-me-fixed</span>"&gt;
     ...
 &lt;/div&gt;</code></pre>
 
@@ -151,7 +157,7 @@
 
                             Fork icon defaults to white, optionally change to black
 
-<pre><code>&lt;div class="fork-me fork-me-right <span class="highlight">fork-me-dark</span>"&gt;
+<pre><code>&lt;div class="fork-me <span class="highlight">fork-me-dark</span>"&gt;
     ...
 &lt;/div&gt;</code></pre>
 
@@ -195,7 +201,7 @@
 
                         <li>
 
-                            <a href="https://github.com/edull24/fork-me-on-github/archive/v1.0.2.zip">Download</a> the latest release source
+                            <a href="https://github.com/edull24/fork-me-on-github/archive/v2.0.0.zip">Download</a> the latest release source
 
                         </li>
 
@@ -223,10 +229,12 @@
                         <li>
 
                             Add the markup:
-<pre><code>&lt;div class="fork-me fork-me-right"&gt;
-    &lt;a class="fork-me-link" href="[your repo url]"&gt;
-        &lt;span class="fork-me-text"&gt;Fork Me On GitHub&lt;/span&gt;
-    &lt;/a&gt;
+<pre><code>&lt;div class="fork-me-wrapper"&gt;
+    &lt;div class="fork-me"&gt;
+        &lt;a class="fork-me-link" href="[your repo url]"&gt;
+            &lt;span class="fork-me-text"&gt;Fork Me On GitHub&lt;/span&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
                         </li>
